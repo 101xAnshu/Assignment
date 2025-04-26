@@ -3,6 +3,7 @@ const cors = require("cors");
 const helmet = require("helmet");
 const morgan = require("morgan");
 const connectDB = require("./config/db");
+const authRoutes = require("./routes/authRoutes");
 
 require("dotenv").config();
 
@@ -15,6 +16,8 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 connectDB();
+
+app.use("/api/auth", authRoutes);
 
 app.get("/", (req, res) => res.send("Expense Tracker API"));
 
