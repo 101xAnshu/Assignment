@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 8080;
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://your-frontend-domain.com"],
+    origin: ["http://localhost:5173", "https://expense-assignment.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "x-auth-token"],
     credentials: true,
