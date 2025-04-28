@@ -31,7 +31,7 @@ app.get("/hello", (req, res) => {
 });
 
 // Set up cron job to hit /hello every 10 minutes
-const serverUrl = process.env.SERVER_URL || "http://localhost:4000";
+const serverUrl = process.env.SERVER_URL || "http://localhost:8080";
 cron.schedule("*/10 * * * *", async () => {
   try {
     const response = await axios.get(`${serverUrl}/hello`);
