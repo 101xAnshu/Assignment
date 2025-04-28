@@ -32,7 +32,7 @@ A full-stack expense tracker application that allows users to record their expen
 ## Live Demo
 
 The application is deployed and can be accessed at:
-[Frontend URL](https://expense-assignment.vercel.app/)
+[Live Demo](https://expense-assignment.vercel.app/)
 
 ## Installation
 
