@@ -92,7 +92,7 @@ const ExpenseForm = ({ expense, onSubmit, onCancel }) => {
             htmlFor="description"
             className="block text-sm font-medium text-gray-700 mb-1"
           >
-            Description (Optional)
+            Description
           </label>
           <textarea
             id="description"
